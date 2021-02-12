@@ -1,0 +1,418 @@
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Abel&family=Nerko+One&display=swap" rel="stylesheet">
+            <link href="style.css" type="text/css" rel="stylesheet" />    
+            <title>HTML and CSS Structure Cheat Sheet Project</title>
+        </head>
+        <body>
+            <header>
+                <h1>My HTML and CSS Structure Cheat Sheet Project for Codecademy</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="#htmlstructure">HTML Page Structure</li></a>
+                    <li><a href="#tablestructure">HTML Table Structure</a></li>
+                    <li><a href="#cssstructure">CSS Specificity</a></li>
+                </ul>
+            </nav>
+            <main>
+                <section>
+                    <a id="htmlstructure"></a><h2>HTML Page Structure</h2>
+                    <p>I often struggle with remembering the order or the structure of things when it comes to writing code. So I created the Cheat Sheet tables below as a reference to come back to when I struggle.
+                        <br><br>
+                    This page isn't that attractive and I'm pretty sure it's frowned upon to put tables, in tables in tables but using tables was the aim of the project so, please forgive me. 
+                        <br><br>
+                    Feedback and constructive criticism welcome!
+                    </p>
+                    <table class="structuretable">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Element Meaning</th>
+                                <th>Used For</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="element">&lt;html&gt;</td>
+                                <td>HTML stands for Hypertext Markup Language</td>
+                                <td>Tells the browser that this is an HTML file so it can display it</td>
+                            </tr>
+                            <tr>
+                                <td class="element">&lt;head&gt;</td>
+                                <td>Used at the top of the page as a header</td>
+                                <td>Invisible to the user, contains links to fonts, styles and other information browsers and search engines need</td>
+                            </tr>
+                            <tr>
+                                <td class="element">&lt;meta...&gt;</td>
+                                <td>Metadata is data (information) about data.</td>
+                                <td>Meta name, content etc</td>
+                            </tr>
+                            <tr>
+                                <td class="element">&lt;link...&gt;</td>
+                                <td>Connects to something external to use it on the page</td>
+                                <td>Linking style sheets (CSS), fonts etc</td>
+                            </tr>
+                            <tr>
+                                <td class="element">&lt;title&gt;</td>
+                                <td>Name of the page</td>
+                                <td>Descriptive name that Google can process and also displays in browser tabs</td>
+                            </tr>
+                            <tr>
+                                <td class="element">&lt;body&gt;</td>
+                                <td>Defines the document's body. There can only be one.</td>
+                                <td>Contains the content of the page that can be seen and read</td>
+                            </tr>
+                            <tr>
+                                <td class="element">&lt;nav&gt;</td>
+                                <td>Short for 'navigation'</td>
+                                <td>Used for menus that help users navigate the page or site</td>
+                            </tr>
+                            <tr>
+                                <td class="element">&lt;main&gt;</td>
+                                <td>The main part of the content that the page has been made for</td>
+                                <td>Everything that the page's title describes - the text, images other media and more.</td>
+                            </tr>
+                            <tr>
+                                <td class="element">&lt;section&gt;</td>
+                                <td>A part within the main content</td>
+                                <td>Breaks up the page's content so the page can be easily read in HTML</td>
+                            </tr>
+                            <tr>
+                                <td class="element">&lt;article&gt;</td>
+                                <td>A self-contained part of the page's dialogue</td>
+                                <td>Used for content that can stand alone on the page</td>
+                            </tr>
+                            <tr>
+                                <td class="element">&lt;aside&gt;</td>
+                                <td>Content that is positioned to the side</td>
+                                <td>Mainly used for sidebars</td>
+                            </tr>
+                            <tr>
+                                <td class="element">&lt;footer&gt;</td>
+                                <td>The section at the bottom of a page</td>
+                                <td>Contains anything you need to appear after the main content and is the same on every page eg, a secondary menu or contact details</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br><br>
+                    <table class="exampletable">
+                        <tbody>
+                            <tr>
+                                <td>&lt;html&gt;</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table class="exampletable insiderows">
+                                        <tbody>
+                                            <tr>
+                                                <td>&lt;head&gt;</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table class="exampletable insideinsiderows">
+                                                        <tr>
+                                                            <td>&lt;meta...&gt;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>&lt;link...&gt;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>&lt;title&gt;&lt;/title&gt;</td>
+                                                        </tr>
+                                                    </table class="exampletable">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>&lt;/head&gt;</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="exampletable insiderows">
+                                        <tbody>
+                                            <tr>
+                                                <td>&lt;body&gt;</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table class="exampletable insideinsiderows">
+                                                        <tr>
+                                                            <td>&lt;nav&gt;&lt;/nav&gt;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>&lt;main&gt;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <table class="exampletable insideinsideinsiderows">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td rowspan="3" id="spancell">&lt;aside&gt;&lt;/aside&gt;</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>&lt;section&gt;&lt;/section&gt;</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>&lt;article&gt;&lt;/article&gt;</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>        
+                                                            </td>
+                                                            <tr>
+                                                                <td>&lt;/main&gt;</td>
+                                                            </tr>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>&lt;footer&gt;&lt;/footer&gt;</td>
+                                                        </tr>
+                                                    </table class="exampletable">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>&lt;/body&gt;</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;/html&gt;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <br><br>
+                <section>
+                    <a id="tablestructure"></a><h2>HTML Table Structure</h2>
+                    <table class="structuretable">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Element Meaning</th>
+                                <th>Used For</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="element">&lt;table&gt;</td>
+                                <td>Establishes your table to the browser</td>
+                                <td>Used to display content in cells organised in rows and columns</td>
+                            </tr>
+                            <tr>
+                                <td class="element">&lt;thead&gt;</td>
+                                <td>Much like the &lt;header&gt; element but for tables</td>
+                                <td>Contains the header cells. They can easily be styled differently.</td>
+                            </tr>
+                            <tr>
+                                <td class="element">&lt;th&gt;</td>
+                                <td>The table's header cells</td>
+                                <td>Use this element to mark the titles of your columns and rows and give them a different style</td>
+                            </tr>
+                            <tr>
+                                <td class="element">&lt;tbody&gt;</td>
+                                <td>Establishes this is the main content of your table </td>
+                                <td>Much like the &lt;body&gt; element for the page.</td>
+                            </tr>
+                            <tr>
+                                <td class="element">&lt;tr&gt;</td>
+                                <td>This is the table-row element.</td>
+                                <td>Starts a new row for your table</td>
+                            </tr>
+                            <tr>
+                                <td class="element">&lt;td&gt;</td>
+                                <td>These are the table-data cells of your table.</td>
+                                <td>Each new &lt;td&gt; starts a new cell in the same row. In the first row, it sets out your columns.</td>
+                            </tr>
+                            <tr>
+                                <td class="element">&lt;tfoot&gt;</td>
+                                <td>Specifies the footer part of your table</td>
+                                <td>Often used to display totals of columns etc.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </br><br>
+                <table class="exampletable">
+                    <tbody>
+                        <tr>
+                            <td>&lt;table&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table class="exampletable insiderows">
+                                    <tbody>
+                                        <tr>
+                                            <td>&lt;thead&gt;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <table class="exampletable insideinsiderows">
+                                                    <tr>
+                                                        <td>&lt;tr&gt;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <table class="exampletable insideinsideinsiderows">
+                                                                <tr>
+                                                                    <td id="spancell">&lt;th&gt;&lt;/th&gt;</td>
+                                                                    <td id="spancell">&lt;th&gt;&lt;/th&gt;</td>
+                                                                    <td id="spancell">&lt;th&gt;&lt;/th&gt;</td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&lt;/tr&gt;</td>
+                                                    </tr>
+                                                </table class="exampletable">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>&lt;/thead&gt;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>&lt;tbody&gt;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <table class="exampletable insideinsiderows">
+                                                    <tr>
+                                                        <td>&lt;tr&gt;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <table class="exampletable insideinsideinsiderows">
+                                                                <tr>
+                                                                    <td id="spancell">&lt;td&gt;&lt;/td&gt;</td>
+                                                                    <td id="spancell">&lt;td&gt;&lt;/td&gt;</td>
+                                                                    <td id="spancell">&lt;td&gt;&lt;/td&gt;</td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&lt;/tr&gt;</td>
+                                                    </tr>
+                                                </table class="exampletable">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>&lt;/tbody&gt;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>&lt;tfoot&gt;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <table class="exampletable insideinsiderows">
+                                                    <tr>
+                                                        <td>&lt;tr&gt;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <table class="exampletable insideinsideinsiderows">
+                                                                <tr>
+                                                                    <td id="spancell">&lt;th&gt;&lt;/th&gt;</td>
+                                                                    <td id="spancell">&lt;th&gt;&lt;/th&gt;</td>
+                                                                    <td id="spancell">&lt;th&gt;&lt;/th&gt;</td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&lt;/tr&gt;</td>
+                                                    </tr>
+                                                </table class="exampletable">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>&lt;/tfoot&gt;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&lt;/table&gt;</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </section>
+                <section>
+                    <a id="cssstructure"></a><h2>CSS Structure</h2>
+                    <p>I know CSS specificity isn't strictly 'structure' but it is still a sequence that needs to be memorised so that you are able to write CSS that flows correctly and is easy to use.
+                        <br><br>
+                        There are also many more CSS Selectors that I didn't include but the table was getting difficult to handle as it was. Maybe this is something I can add in the future.
+                        <br><br>
+                        If you're really interested in CSS Specificity then I highly recommend you look into how you can <a href="https://css-tricks.com/specifics-on-css-specificity/" target="_blank">'Calculate' it and give it a value</a> as explained here by <a href="css-tricks.com" target="_blank">CSS Tricks</a>. As an amateur, I thought this was really interesting.
+                    </p>
+                    <table class="structuretable">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Example</th>
+                                <th colspan="6">Specificity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="element">&lt;element&gt;</td>
+                                <td>body, h1, div, p</td>
+                                <td colspan="1" class="insiderows"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="element">.class, :pseudo-class</td>
+                                <td>.banner, :active</td>
+                                <td colspan="2" class="insiderows"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="element">#id</td>
+                                <td>#extraspace</td>
+                                <td colspan="3" class="insiderows"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="element">CSS Sheet Order</td>
+                                <td>.example {color:green;} .example {color:blue} blue wins</td>
+                                <td colspan="4" class="insiderows"></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="element">Inline Styling</td>
+                                <td>&lt;h1&gt; style=""...</td>
+                                <td colspan="5" class="insiderows"></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="element">!important Tag</td>
+                                <td>color: red!important;</td>
+                                <td colspan="6" class="insiderows"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br><br>
+                </section>
+            </main>
+            <footer>
+                <div class="contact-details">
+                    <h3><a href="https://github.com/Signy3">Github Page: Signy3</a></h3>
+                </div>
+            </footer>
+    </body>
+    </html>

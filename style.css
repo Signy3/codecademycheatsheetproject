@@ -1,0 +1,147 @@
+body {
+    font-family: 'Abel', Arial, sans-serif;
+    background-color: lightgrey;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Nerko One', cursive;
+    color: indianred
+}
+h2 {
+    font-size: 31px;
+}
+p {
+    font-size: 20px;
+    text-align: justify;
+}
+a {
+    color: indianred;
+}
+header h1 {
+    width: 50%;
+    margin: 0;
+    padding: 5%;
+    font-style: italic;
+}
+header {
+    background-image: url("header-bg.jpg");
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+footer {
+    background-color: indianred;
+    height: 300px;
+    padding: 20px 50px;
+    text-align: center;
+}
+nav {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        text-align: center;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+nav li{
+    list-style: none;
+    display: inline-block;
+    background-color: indianred;
+    color: white;
+    width: 25%;
+    text-align: center;
+    padding: 10px;
+}
+nav a {
+    color:white;
+    text-decoration: none;
+}
+nav a:hover {
+    color:goldenrod;
+}
+nav a:active {
+    color:goldenrod;
+    font-weight: bold;
+}
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+.structuretable {
+    border-spacing: 0;
+    width: 100%;
+}
+.structuretable th {
+    background-color:darkslategray;
+    color: white;
+    padding: 10px;
+}
+.structuretable td {
+    vertical-align: top;
+    padding: 10px;
+    border-bottom: 1px solid darkslategray;
+}
+td.element {
+    font-weight: bold;
+    background-color:whitesmoke;
+    text-align: center;
+    color: darkslategray;
+    vertical-align: middle;
+    border: 0;
+}
+.exampletable {
+    margin: 0 auto;
+}
+.exampletable td {
+    border: 1px solid indianred;
+    padding: 10px;
+    width: 100%;
+    font-weight: bold;
+}
+.insiderows {
+    background-color: lightslategray;
+    color: white;
+}
+.insideinsiderows {
+    background: darkslategray;
+    color: white;
+}
+.insideinsideinsiderows {
+    background: white;
+    color: indianred;
+}
+td#spancell {
+    width: 30%;
+}
+.contact-details h3, .contact-details a {
+    color: white;
+    font-size: 30px;
+    text-decoration: none   ;
+}
+/*For Desktop*/
+@media only screen and (min-width: 610px) {
+.exampletable {
+    width: 75%;
+}
+header h1 {
+    font-size: 50px;
+}
+header {
+    background-size: cover;
+    height: 440px;
+}
+}
+/*For Mobile*/
+@media only screen and (max-width: 610px) {
+.exampletable {
+    width: 100%;
+}
+header h1 {
+    font-size: 31px;
+}
+header {
+    background-size: contain;
+    height: 260px;
+}
+}
